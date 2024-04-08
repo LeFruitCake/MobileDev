@@ -14,10 +14,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnExerciseBtn"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnExerciseBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/btnExerciseBtn"
@@ -29,4 +29,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTicTacToe"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="108dp"
+        android:text="TicTacToe"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/calculatorBtn"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/calculatorBtn"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

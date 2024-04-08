@@ -395,11 +395,12 @@ public class Calculator extends AppCompatActivity {
                         System.out.println("I will pop "+foo.peek()+" because im performing a calculation");
                         num1.append(foo.pop());
                         num1.reverse();
+                        System.out.println("Reversed num1 "+num1);
                     }
                 }else{
                     num1.append(foo.pop());
                 }
-                System.out.println("Reversed num1 "+num1);
+
                 resultTV.setText(String.valueOf(calculateSequentially(sb.charAt(i),Float.parseFloat(String.valueOf(num1)),Float.parseFloat(String.valueOf(num2)))));
             }
         }
