@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnCalculator, btnButtonExercise,btnTicTacToe;
+    Button btnCalculator, btnButtonExercise,btnTicTacToe,btnMatch3;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnCalculator = findViewById(R.id.calculatorBtn);
         btnButtonExercise = findViewById(R.id.btnExerciseBtn);
         btnTicTacToe = findViewById(R.id.btnTicTacToe);
-
+        btnMatch3 = findViewById(R.id.btnMatch3);
         btnCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent3 = new Intent(MainActivity.this,TicTacToe.class);
                 startActivity(intent3);
+            }
+        });
+
+        btnMatch3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this, Match3.class);
+                startActivity(intent4);
             }
         });
     }
